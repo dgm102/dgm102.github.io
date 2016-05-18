@@ -1,23 +1,165 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:700,400,500' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="large.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="dropit.js"></script>
+<link rel="stylesheet" href="dropit.css" type="text/css" />
+    </head>
+    
+<body>
+<div class="banner" role="banner">
+    <div class="logo" role="logo"><img src="img/wcoast%20logo%20small.png" alt="east coast foods logo" </div> </div>
+    <div class="user-input">
+<input type="button" value="Login / Register" class="deals-btn-top">
+        <form name="ProductSearch" method="get" action="/Search.aspx" onsubmit="$jq.cookie('prSrching',1); return SearchOnSubmit(document.getElementById('searchInput').value,'SearchInput')">
+        <input id="search-box" class="search" autocapitalize="off" placeholder="Search"  type="search"></input>
+   <!-- ===<div class="search-button"><img src="img/search-magnifying-glass-icon-760x275-2.jpg" alt="search button"></div>=== -->
+    </form></div>
+    </div>
+<!-- ===NAV=== -->
+<div class="toplevelnav" role="navigation">
+    <ul class="menu">
+    <li><a href="#">Vitamins & Supplements&#9660;</a>
+          <ul>
+            <li><a href="#">Vitamins</a></li>
+            <li><a href="#">Minerals</a></li>
+            <li><a href="#">Women's Supplements</a></li>
+            <li><a href="#">Immune Support</a></li>
+            <li><a href="#">Sleep Aids</a></li>
+              <li><a href="#">By Health Concern</a></li>
+        </ul>
+        </li>
+    <li><a href="#">Food & Beverages&#9660;</a> 
+        <ul>
+            <li><a href="#">Gluten-Free Grains</a></li>
+            <li><a href="#">Seeds, Herbs & Spices</a></li>
+            <li><a href="#">Tea & Coffee Substitutes</a></li>
+            <li><a href="#">Baking Supplies</a></li>
+             <li><a href="#">Recipes</a></li>
+        </ul>
+          </li> 
+    <li><a href="#">Weight Management&#9660;</a> 
+        <ul>
+            <li><a href="#">Weight Loss Supplements</a></li>
+            <li><a href="#">Cleansing Kits</a></li>
+            <li><a href="#">Natural Sweeteners</a></li>
+            <li><a href="#">Weight Management Tips</a></li>
+        </ul>
+        </li>
+    <li><a href="#">Sports & Nutrition&#9660;</a>
+          <ul>
+            <li><a href="#">Energy Supplements</a></li>
+            <li><a href="#">Protein Powders</a></li>
+        </ul>
+        </li>
+    <li><a href="#">Personal Care</a> </li>
+    <li><a href="#">Natural Home&#9660;</a>
+        <ul>
+            <li><a href="#">Cleaning Supplies</a></li>
+            <li><a href="#">Candles</a></li>
+            <li><a href="#">Essential Oils</a></li>
+        </ul></li>
+        <li><a href="#"><img src="img/shopping-cart-512.png"></a> </li> 
+    </ul>
+</div>    
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!-- ===MAIN=== -->
+<div class="intro">
+<h1>West Coast Natural Foods</h1>
+    <h2>Taking Care of Your Health & Wellbeing Since 1980</h2><hr>
+    <p>Since 1980, we have been providing our customers with the top-quality <strong>vitamins, minerals, herbal remedies and nutritional supplements</strong> from select brands, such as Natural Factors, Sisu, Flora, and more. We also offer organic and natural groceries and a selection of personal care products. Feel free to <strong>shop online</strong> or <strong>visit our store in Sooke</strong> - At West Coast Natural Foods, your health and wellbeing are our priority.</p></div>
+<div class="main">
+   <div class="deals-tile">
+       <div class="deals-tile-text">
+    <h3>Monthly Deals</h3><hr>
+       <p>Check our special offers and get access to huge savings.</p>
+           <a href="#"><input type="button" class="deals-btn" value="View This Month's Deals"></a>
+       </div>
+       <div class="deals-image"><img src="img/tablets-623706_960_720.jpg" alt="product deals"></div>
+    </div> 
+    
+    <div class="deals-tile">
+       <div class="deals-tile-text">
+    <h3>Health & Nutrition Blog</h3><hr>
+       <p>Check our special offers and get access to huge savings.</p>
+           <a href="#"><input type="button" class="deals-btn" value="Read Our Blog"></a>
+       </div>
+       <div class="deals-image"><img src="img/blogimage.jpg" alt="health blog"></div>
+    </div> 
+    
+    <div class="deals-tile">
+       <div class="deals-tile-text">
+    <h3>Subscribe to Our Newsletter!</h3><hr>
+       <p>Check our special offers and get access to huge savings.</p>
+      <a href="#"><input type="button" class="deals-btn" value="Subscribe!"/></a>
+       </div>
+       <div class="deals-image"><img src="img/subscribe.jpg" alt="subscribe to newsletter"></div>
+    </div> 
+    
+    </div>
+<!-- ===POPULAR=== -->
+    <div class="popular">
+    <h2>Popular Products</h2><hr>
+    <div class="popular-wrapper">
+    <div class="product-box">
+    <h3>Natural Factors Vitamin C Extra 500mg</h3>
+        <div class="image-wrapper"><img src="img/extra%20vitc.jpg" alt="vitamin C bottle"></div>
+        <div class="product-desc"><a href="#"><img src="img/viewmore.png" alt="view more"></a><p>Excellent support for your immune system</p><p>$4.99</p></div>
+    </div>
+      <div class="product-box">
+    <h3>Natural Factors Biotin 300mcg</h3>
+        <div class="image-wrapper"><img src="img/biotin.jpg" alt="biotin bottle"></div>
+          <div class="product-desc"><a href="#"><img src="img/viewmore.png" alt="view more"></a><p>Excellent support for your immune system</p><p>$4.99</p></div>
+    </div>
+      <div class="product-box">
+    <h3>NOW Folic Acid 800mcg</h3>
+          <div class="image-wrapper"><img src="img/folic%20acid.jpg" alt="folic acid bottle"></div>
+          <div class="product-desc"><a href="#"><img src="img/viewmore.png" alt="view more"></a><p>Excellent support for your immune system</p><p>$4.99</p></div>
+    </div>
+          <div class="product-box">
+    <h3>Organika Milk Thistle 250mg</h3>
+        <div class="image-wrapper"><img src="img/milkthistle.jpg" alt="milk thistle bottle"></div><div class="product-desc"><a href="#"><img src="img/viewmore.png" alt="view more"></a><p>Excellent support for your immune system</p><p>$4.99</p></div>
+    </div>
+      <div class="product-box">
+    <h3>Bob's Mill Organic Quinoa</h3>
+        <div class="image-wrapper"><img src="img/quinoa.jpg" alt="organic quinoa"></div><div class="product-desc"><a href="#"><img src="img/viewmore.png" alt="view more"></a><p>Excellent support for your immune system</p><p>$4.99</p></div>
+    </div>
+      <div class="product-box">
+    <h3>Bulk Japanese Green Tea</h3>
+          <div class="image-wrapper"><img src="img/Green-Tea-Leaves.jpg" alt="green tea"></div><div class="product-desc"><a href="#"><img src="img/viewmore.png" alt="view more"></a><p>Excellent support for your immune system</p><p>$4.99</p></div>
+    </div>
+        </div>
+    </div>
+<!-- ===FOOTER=== -->
+    <div class="footer-wrapper">
+<div class="footer">
+    <h3>Contact Us</h3>
+    <p>We are open Monday - Saturday 10am to 5pm</p>
+    <address>10200 West Coast Road, Sooke V0A 1A2</address>
+    <p><span style="color: #562b22; font-weight: 600">Call Us:</span> 250 123 1234</p>
+    <p><span style="color: #562b22; font-weight: 600">Email Us: </span><a href="mailto:wcfoods@example.com">wcfoods@example.com</a></p>
+    </div> 
+        <div class="footer">
+        <h3><a href="#">About Us</a></h3>
+        <h3><a href="#">Ordering & Shipping</a></h3>
+            <h3><a href="#">Account Login</a></h3>
+        <h3><a href="#">Privacy Policy</a></h3>
+        </div>
+<div class="footer">
+        <h3>Follow Us</h3>
+    <div class="social-wrapper">
+    <a href="#"><img src="img/social_media_icons_black_color_transparent_background_32x32_0000_facebook.png" alt="facebook icon"></a>
+        <a href="#"><img src="img/social_media_icons_black_color_transparent_background_32x32_0002_twitter.png" alt="facebook icon"></a>
+        <a href="#"><img src="img/social_media_icons_black_color_transparent_background_32x32_0029_instagram.png" alt="facebook icon"></a>
+    </div>        </div>
+    </div>
+    
+  <script>
+    $(document).ready(function() {
+    $('.menu').dropit();
+});
+    </script>
+    </body> 
+</html>
