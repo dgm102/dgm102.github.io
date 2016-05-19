@@ -26,13 +26,13 @@ html, body { box-sizing: border-box;
 .intro h1 {font-size:2.5em;}
 .intro p {line-height: 2em; font-size: 1.2em; text-align: center;}
 .main {margin: 0 auto; margin-top: 2em;width: 90%;display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap;}
+.main a {text-decoration: none;}
 .deals-tile {width: 40%; height: 300px; border: 1px solid #6e7e85; margin-top: 2em; margin-bottom: 2em; display: flex; flex-direction: row;}
 .deals-tile h3 {font-size: 22px;}
 .deals-tile p {line-height: 2em;text-align: center;}
 .deals-btn {cursor: pointer; font-family:'Raleway', sans-serif; font-size: 14px; font-weight: 500; padding: 1em; background-color: #562b22; color: #e2e2e2;border: 0; width: 100%; margin: 0 auto;}
 .deals-btn:hover {background-color:#bf5f4b;}
 .deals-tile-text {width: 40%; padding: 2%;}
-.deals-tile-text a {text-decoration: none;}
 .deals-image {width: 65%; align-self: center;max-width: 100%;}
 .deals-image img {max-width: 100%;}
 .main-tile h3 {text-align: left;}
